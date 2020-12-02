@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+:root {
+  --font: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+body,
+html {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+ 
+}
+#indexBody{
+  background: #7767b5a8;
+  z-index: -1;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.mainContent {
+  display: flex;
+  padding: 75px 114px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background: linear-gradient(rgba(59, 43, 115, 1), rgba(59, 43, 115, 0.7));
+  border-radius: 5px;
+}
+.bannerGIFContainer {
+  margin-right: 50px;
+  width: 50%;
+}
+.bannerGIFContainer img {
+  width: 100%;
+}
+.textContainer {
+  margin-left: 50px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  font-family: var(--font);
+  color: #fff;
+}
+.gameName {
+  letter-spacing: 1.5px;
+}
+.gameType {
+  margin: 10px 0 46px 0;
+  letter-spacing: 2.5px;
+}
+.playNowButton {
+  width: 60%;
+  padding: 12px 0;
+  font-size: 25px;
+  border-radius: 30px;
+  background: #fff;
+  color: rgba(59, 43, 115, 1);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border: none;
+  transition: transform 2s;
+  cursor: pointer;
+}
+.playNowButton:hover {
+  transform: scale(1.2);
+  background: rgb(60, 30, 110);
+  color: #fff;
+}
+.arrowSpan {
+  width: 20%;
+  display: inline-block;
+}
+
+/* showGamePage */
+.showGameBody {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(195 111 70 / 54%);
+}
+.gameContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background: url(wall.png) no-repeat center/cover;
+}
+.multipleContaineForHoleForMole {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.holeForMole {
+  width: 26%;
+  height: 247px;
+  background: url(test.png);
+  border-radius: 0%;
+  display: inline-block;
+  position: relative;
+}
+.holeForMole .mole {
+  width: 100%;
+  height: 100%;
+}
+.holeForMole .moleImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 60%;
+  animation: moleAnimation 1s linear infinite;
+}
+@keyframes moleAnimation {
+  /* 0% {
+    transform: translate(-35px, -25px)
+  }
+  50% {
+    transform:  translate(-35px, -60px)
+  }
+  100% {
+    transform: translate(-35px, -25px)
+  } */
+}
+.blast {
+  display: none;
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.scoreContainer {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  font-family: 'Yellowtail', cursive;
+}
+.gameOver {
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+.gameOverText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  letter-spacing: 3px;
+}
+.yourScore {
+  text-align: center;
+  margin: 10px;
+}
+.moleClass {
+  display: block;
+  width: 190px;
+  height: 144px;
+}
