@@ -110,6 +110,6 @@ function game() {
     img.addEventListener('click', moleClickedCheck);
   }
   let last = 0;
-  let interval = setInterval(createGameBody, 1000);
+  let interval = setInterval(createGameBody, 500);
   
 }
